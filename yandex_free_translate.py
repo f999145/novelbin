@@ -21,7 +21,7 @@ if __name__ == '__main__':
         file='crap.ipynb'
     ) as file:
         text = json.loads(file.read())
-        name = text['cells'][1]['outputs'][0]['text'][0].strip()
+        name = text['cells'][2]['outputs'][0]['text'][0].strip()
     
     with open(
         file=f'{name}.txt'
